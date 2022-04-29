@@ -1,5 +1,5 @@
 $(() => {
-    $.get('http://5dd1894f15bbc2001448d28e.mockapi.io/playlist', (response) => {
+    $.get('https://5dd1894f15bbc2001448d28e.mockapi.io/playlist', (response) => {
         let currentSong = 0;
         $("#player").append(`<audio id=music-player src=${response[currentSong].file} type=audio/mp3></audio>
         <h1 id = current-track-heading>${response[currentSong].track}</h1>
