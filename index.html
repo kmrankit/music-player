@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="music-player-main-container">
+            <div class="music-player-container">
+                <div id="player"></div>
+                <div class="current-track-progress">
+                    <div>
+                        <span id="minute">0</span>:<span id="second">0</span>
+                    </div>
+                    <div id="progress-bar">
+                        <div id="progress"></div>
+                    </div>
+                    <div>
+                        -<span id="minute-remain">0</span>:<span id="second-remain">0</span>
+                    </div>
+                </div>
+                <div id="control-btns">
+                    <div class="music-control">
+                        <i id="prev-btn" class="fa fa-step-backward" aria-hidden="true"></i>
+                        <i id="backward-btn" class="fa fa-backward" aria-hidden="true"></i>
+                        <i id="play-btn" class="fa fa-play-circle active-btn" aria-hidden="true"></i>
+                        <i id="pause-btn" class="fa fa-pause-circle hide-btn" aria-hidden="true"></i>
+                        <i id="forward-btn" class="fa fa-forward" aria-hidden="true"></i>
+                        <i id="next-btn" class="fa fa-step-forward" aria-hidden="true"></i>
+                        <i id="repeat-btn" class="fa fa-repeat" aria-hidden="true"></i>
+                    </div>
+                    <div class="volume-control">
+                        <i id="volume-mute-btn" class="fa fa-volume-off hide-btn" aria-hidden="true"></i>
+                        <i id="volume-down-btn" class="fa fa-volume-down active-btn" aria-hidden="true"></i>
+                        <i id="volume-up-btn" class="fa fa-volume-up" aria-hidden="true"></i>
+                        <div id="volume-bar">
+                            <div id="volume-bar-control"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="playlist"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
